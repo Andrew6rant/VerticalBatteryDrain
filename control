@@ -1,0 +1,9 @@
+Package: io.github.andrew6rant.verticalbatterydrain
+Name: VerticalBatteryDrain
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome Orion tweak!
+Maintainer: Andrew6rant
+Author: Andrew6rant
+Section: Tweaks
+Depends: ${ORION}, firmware (>= 12.2)
