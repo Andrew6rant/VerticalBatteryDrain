@@ -13,7 +13,7 @@ class BatteryFillHook: ClassHook<_UIBatteryView> {
     }
     // orion:new
     func fillLogic() {
-        let adjustedLevel = CGFloat(UIDevice.current.batteryLevel) * (22/3.0)
-        target.fillLayer.setFrame(CGRect(x: 2, y: -adjustedLevel + 9, width: 18, height: adjustedLevel))
+        let adjustedLevel = CGFloat(UIDevice.current.batteryLevel) * (22/3.0) // 0%-100% -> 0px-7.3333..px
+        target.fillLayer.setFrame(CGRect(x: 2, y: -adjustedLevel + (28/3.0), width: 18, height: adjustedLevel)) // 0%-100% -> 9.3333..px-2px
     }
 }
